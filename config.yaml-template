@@ -1,0 +1,23 @@
+# config.yaml
+
+app:
+  host: "<your-ip>"
+  port: <your-port>
+  debug: true
+
+openai:
+  api_key: "<your-openai-key-here>"
+  model: "<your-model-version>"
+
+prompts:
+  topic_extraction:
+    system_message: "<give-some-word-for-system-message-to-get-the-topic>"
+    user_message: "<give-some-word-for-user-message-to-get-the-topic>"
+    max_tokens: 50
+    temperature: 0.5
+
+  content_generation:
+    system_message: "<give-some-word-for-system-message-to-generate-the-content>"
+    user_message: "<give-some-word-for-user-message-to-generate-the-content>"
+    max_tokens: 3500
+    temperature: 0.7
